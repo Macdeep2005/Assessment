@@ -1,0 +1,172 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: black;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #eee;
+  padding: 20px;
+  color: #d60000;
+}
+
+
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tab-box {
+  background-color: white;
+  color: #d60000;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  border: 2px solid #d60000;
+}
+
+.tab-box:hover {
+  background-color: #d60000;
+  color: white;
+  transform: scale(1.1);
+}
+
+main {
+  padding: 30px;
+}
+
+.section-box {
+  display: none;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.section-box.active {
+  display: block;
+}
+
+footer {
+  background-color: #d60000;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#moodCheck button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #d60000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#moodCheck button:hover {
+  background-color: #a00000;
+}
+
+#moodResponse {
+  font-size: 1.1em;
+  color: #d60000;
+}
+body.dark #moodResponse {
+  color: #ff8c8c;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.skill {
+  background-color: #eee;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: grab;
+  transition: background-color 0.3s;
+}
+
+.skill:hover {
+  background-color: #ddd;
+}
+
+.dropzone {
+  min-height: 100px;
+  padding: 20px;
+  border: 2px dashed #d60000;
+  border-radius: 10px;
+  background-color: #fff0f0;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark .tab-box {
+  background-color: #1e1e1e;
+  color: white;
+  border-color: white;
+}
+
+body.dark .tab-box:hover {
+  background-color: white;
+  color: #d60000;
+}
+
+body.dark header,
+body.dark nav,
+body.dark footer {
+  background-color: #ff0000;
+  color: #ccc;
+}
+
+body.dark .dropzone {
+  background-color: #333;
+}
+body.dark .section-box {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark .skill {
+  background-color: #2e2e2e;
+  color: white;
+  border-color: #aaa;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

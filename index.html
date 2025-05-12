@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WEB</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mehakdeep Kaur</h1>
+    <p>Web Developer | Tech Enthusiast</p>
+  <button id="themeToggle">DARK MODE</button>
+  </header>
+  <nav>
+    <ul>
+      <li class="tab-box" data-section="home">Home</li>
+      <li class="tab-box" data-section="about">About Me</li>
+      <li class="tab-box" data-section="skills">Skills</li>
+      <li class="tab-box" data-section="contact">Contact</li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="active section-box">
+  <h2>Welcome!</h2>  
+  <div id="moodCheck">
+    <p>How are you doing today?</p>
+    <button onclick="handleMood('good')">Good 😊</button>
+    <button onclick="handleMood('bad')">Not Well 😞</button>
+  </div>
+  <p id="moodResponse" style="margin-top: 15px; font-weight: bold;"></p>
+</section>
+
+
+    <section id="about" class="section-box">
+      <h2>About Me</h2>
+      <p>I am a highly motivated Software Development & Network Engineering student with a passion for full-stack development and user experience.</p>
+      <div class="split-layout">
+        <div class="split-text">
+          <p>Curerently enrolled in my 2nd year I'm working on my first coop at Samskrita Bharati.</p>
+          <button onclick="alert('Sheridan College!')">Which college?</button>
+        </div>
+        <div class="split-image">
+          <img src="download.jpeg" alt="SHERIDAN" />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-box">
+      <h2>My Skills</h2>
+      <p>Drag the skills below into the drop zone to highlight them.</p>
+      <div class="skills-container">
+        <div class="skill" draggable="true">HTML</div>
+        <div class="skill" draggable="true">CSS</div>
+        <div class="skill" draggable="true">JavaScript</div>
+        <div class="skill" draggable="true">React</div>
+        <div class="skill" draggable="true">MySQL</div>
+        <div class="skill" draggable="true">Java</div>
+        <div class="skill" draggable="true">Python</div>
+
+
+      </div>
+      <div class="dropzone">Drop your top skills here</div>
+    </section>
+
+    <section id="contact" class="section-box">
+      <h2>Contact Info</h2>
+      <p>📧 Email: memehakd@sheridancollege.ca</p>
+      <p>📱 Phone: 123-456-7890</p>
+      <p>Location: Brampton, ON</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
